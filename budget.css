@@ -71,22 +71,20 @@
   }
   
   .header .logo img {
-    max-height: 50px;
+    max-height: 70px;
     margin-right: 6px;
   }
   
-  .header .logo h1 {
-    font-size: 30px;
+  .header .logo  {
+    font-size: 60px;
     margin: 0;
-    font-weight: 600;
+    font-weight:bold;
     letter-spacing: 0.8px;
     color: #fff;
     font-family: var(--font-primary);
   }
   
-  .header .logo h1 span {
-    color: #f96f59;
-  }
+ 
   
   .sticked-header-offset {
     margin-top: 70px;
@@ -113,6 +111,9 @@
   color:black;
   background-color:#fff;
  
+}
+.deletebtn{
+  width: 30px;
 }
 
   
@@ -490,15 +491,16 @@ button{
   }
   
   .footer .footer-info .logo span {
-    font-size: 30px;
+    font-size: 60px;
     font-weight: 700;
     letter-spacing: 1px;
     color: #fff;
     font-family: var(--font-primary);
   }
   
+  
   .footer .footer-info p {
-    font-size: 14px;
+    font-size: 19px;
     font-family: var(--font-primary);
   }
   
@@ -568,6 +570,7 @@ button{
   
   .footer .footer-contact p {
     line-height: 26px;
+    font-size: 15px;
   }
   
   .footer .copyright {
@@ -583,3 +586,7 @@ button{
   .footer .credits a {
     color: #fff;
   }
+  .container p{
+    font-size:8px;
+  }
+  
