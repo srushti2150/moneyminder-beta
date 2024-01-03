@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Budget Tracker</title>
+	<link rel="stylesheet" type="text/css" href="form.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<img class="wave" src="img/wave1.jpg">
+	<div class="container">
+		<div class="img">
+			<img src="img/bg.svg">
+		</div>
+		<div class="login-content">
+			<form id="registrationForm">
+				<img src="img/avatar.svg">
+				<h2 class="title">Welcome to MoneyMinder</h2>
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>Username</h5>
+					     <input type="text"  id="regUsername" name="regUsername" class="input">
+					</div>
+           		</div>
+           		<div class="input-div pass">
+           		   <div class="i"> 
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<h5>Password</h5>
+           		    	<input type="password" id="regPassword" name="regPassword" class="input">
+				   </div>
+				</div>
+				<div class="input-div pass">
+					<div class="i"> 
+            <i class="fas fa-user"></i>
+					</div>
+					<div class="div">
+						<h5>Email</h5>
+						<input type="Email" id="regEmail" name="regEmail" class="input">
+				</div>
+				</div>	
+               <input type="submit" class="btn" value="Login"  onclick="registerUser()">
+            </form>
+        </div>
+    </div>
+	<!-- js -->
+	<script >
+		const inputs = document.querySelectorAll(".input");
+  
+  function addcl(){
+	  let parent = this.parentNode.parentNode;  //  input element being interacted with.
+	  parent.classList.add("focus"); //add focus class to the present element when input  field is focused. 
+  }
+  
+  function remcl(){
+	  let parent = this.parentNode.parentNode;    
+	  if(this.value == ""){
+		  parent.classList.remove("focus");
+	  }
+  }
+  //to iterate over each element  //adds event listeners
+  
+  inputs.forEach(input => {                         
+	input.addEventListener("focus", addcl);  //event on each input element  . When an input field is focused, the addcl function is called.
+	input.addEventListener("blur", remcl);    // loses focus
+  });
+  
+ 
+     
+
+     // store the data in xl 
+    let users = [];
+   
+      function registerUser() {
+        const regUsername = document.getElementById('regUsername').value;
+        const regPassword = document.getElementById('regPassword').value;
+        const regEmail=document.getElementById('regEmail').value;
+   
+        const user = {
+          username: regUsername,
+          password: regPassword,
+          Email:regEmail
+        };
+   
+        users.push(user);
+        updateExcelFile(users);
+   
+        document.getElementById('registrationForm').reset();
+      }
+      function updateExcelFile(data) {
+        const csvContent = "data:text/csv;charset=utf-8," + 
+          data.map(user => `${user.username},${user.password},${user.Email}`).join("\n");
+   
+        const encodedUri = encodeURI(csvContent);
+        const link = document.createElement("a");
+        link.setAttribute("href", encodedUri);
+        link.setAttribute("download", "user_data.csv");
+        document.body.appendChild(link);
+        link.click();
+      }
+    </script>
+    
+</body>
+</html>
+
+
+    
+   
