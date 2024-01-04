@@ -1,20 +1,15 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     "use strict";
-  
-    /**
-     * Preloader
-     */
+    //  Preloader
     const preloader = document.querySelector('#preloader');
     if (preloader) {
       window.addEventListener('load', () => {
         preloader.remove();
       });
     }
-  
-    /**
-     * Sticky Header on Scroll navbar come with scroll
-     */
+     //  Sticky Header on Scroll navbar come with scroll
+    
     const selectHeader = document.querySelector('#header');
     if (selectHeader) {
       let headerOffset = selectHeader.offsetTop;
@@ -33,9 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.addEventListener('scroll', headerFixed);
     }
   
-    /**
-     * Navbar links active state on scroll
-     */
+    // Navbar links active state on scroll
     let navbarlinks = document.querySelectorAll('#navbar a');
   
     function navbarlinksActive() {
@@ -58,9 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('load', navbarlinksActive);
     document.addEventListener('scroll', navbarlinksActive);
   
-    /**
-     * Mobile nav toggle
-     */
+    // Mobile nav toggle
     const mobileNavShow = document.querySelector('.mobile-nav-show');
     const mobileNavHide = document.querySelector('.mobile-nav-hide');
   
@@ -76,10 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
       mobileNavShow.classList.toggle('d-none');
       mobileNavHide.classList.toggle('d-none');
     }
-  
-    /**
-     * Hide mobile nav on same-page/hash links
-     */
+    //  Hide mobile nav on same-page/hash links
     document.querySelectorAll('#navbar a').forEach(navbarlink => {
   
       if (!navbarlink.hash) return;
@@ -95,9 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
     });
   
-    /**
-     * Toggle mobile nav dropdowns
-     */
+      //  Toggle mobile nav dropdowns
     const navDropdowns = document.querySelectorAll('.navbar .dropdown > a');
   
     navDropdowns.forEach(el => {
@@ -113,25 +99,17 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       })
     });
-  
-    /**
-     * Initiate glightbox
-     */
+    /* Initiate glightbox*/
     const glightbox = GLightbox({
       selector: '.glightbox'
     });
   
   
   
-    /**
-     * Initiate Pure Counter
-     */
+    /* Initiate Pure Counter*/
     new PureCounter();
-  
-    
-    
-    /**
-     * Init swiper slider with 1 slide at once in desktop view
+    /*
+     Init swiper slider with 1 slide at once in desktop view
      */
     new Swiper('.slides-1', {
       speed: 600,
@@ -152,8 +130,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   
-    /**
-     * Init swiper slider with 3 slides at once in desktop view
+    /*
+      Init swiper slider with 3 slides at once in desktop view
      */
     new Swiper('.slides-3', {
       speed: 600,
@@ -183,13 +161,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }
     });
-  
     
-    
-  
-    /**
-     * Animation on scroll function and init
-     */
+     /* Animation on scroll function and init*/
     function aos_init() {
       AOS.init({
         duration: 1000,

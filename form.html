@@ -44,7 +44,8 @@
 						<input type="Email" id="regEmail" name="regEmail" class="input">
 				</div>
 				</div>	
-               <input type="submit" class="btn" value="Login"  onclick="registerUser()">
+				<a href="budget.html">
+               <input type="submit" class="btn" value="Login"  onclick="registerUser()"></a>
             </form>
         </div>
     </div>
@@ -90,7 +91,8 @@
         users.push(user);
         updateExcelFile(users);
    
-        document.getElementById('registrationForm').reset();
+        document.getElementById('registrationForm').redirect('budget.html');
+
       }
       function updateExcelFile(data) {
         const csvContent = "data:text/csv;charset=utf-8," + 

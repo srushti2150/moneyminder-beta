@@ -17,6 +17,7 @@ function updateSummary() {
 		if (e.type === 0) ex += e.amount; 
 		return ex; 
 	}, 0); 
+
 	updatedInc.innerText = totalIncome; 
 	updatedExp.innerText = totalExpense; 
 	updatedBal.innerText = totalIncome - totalExpense; 
@@ -105,3 +106,4 @@ function updateTable() {
 
 updateTable();
 //initially to load and display the entries
+ 

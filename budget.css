@@ -7,7 +7,8 @@
     background: #00796b;
     height: 40px;
     font-size: 14px;
-    transition: all 0.5s;
+   
+    
     color: #fff;
     padding: 0;
   }
@@ -81,7 +82,7 @@
     font-weight:bold;
     letter-spacing: 0.8px;
     color: #fff;
-    font-family: var(--font-primary);
+    font-family: var(--font-primary); 
   }
   
  
@@ -431,8 +432,7 @@ button{
     height: calc(100% + 4px);
     animation: glowing 20s linear infinite;
     opacity: 0;
-    transition: opacity .3s ease-in-
-    out;
+    transition: opacity .3s ease-in-out;
     border-radius: 10px;
 	
 }
