@@ -10,11 +10,12 @@ body{
 }
 
 .wave{
-	position: fixed;
+	position:fixed;
 	bottom: 0;
 	left: 0;
 	height: 100%;
 	z-index: -1;
+	
 }
 
 .container{
@@ -40,11 +41,13 @@ body{
 }
 
 .img img{
-	width: 600px;
+	width: 500px;
 }
 
 form{
-	width: 360px;
+	width: 370px;
+	
+	height: 100%;
 }
 
 .login-content img{
@@ -167,8 +170,9 @@ a:hover{
 	border-radius: 25px;
 	outline: none;
 	border: none;
-	background-image: linear-gradient(to right, #187d5b, #3dbc94, #18a777);
+	/* background-image: linear-gradient(to right, #187d5b, #3dbc94, #eff2f1); */
 	background-size: 200%;
+	background: #00796b;
 	font-size: 1.2rem;
 	color: #fff;
 	font-family: 'Poppins', sans-serif;
@@ -179,6 +183,9 @@ a:hover{
 }
 .btn:hover{
 	background-position: right;
+	background-image: linear-gradient(to right, #187d5b, #3dbc94);
+	color: black;
+	font-weight: bold;
 }
 
 

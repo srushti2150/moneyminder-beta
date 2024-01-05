@@ -2,9 +2,7 @@
 
 // Initial Data 
 let tableEntries = [ 
-	{ type: 1, name: "income", amount: 25000 }, 
-	{ type: 0, name: "rent", amount: 18000 }, 
-	{ type: 0, name: "food", amount: 5000 }, 
+	
 ]; 
 
 // Function to update data expense summary . reduce take callback function

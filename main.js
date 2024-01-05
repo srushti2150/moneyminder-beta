@@ -1,4 +1,4 @@
-
+// alok
 document.addEventListener('DOMContentLoaded', () => {
     "use strict";
     //  Preloader
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
       window.addEventListener('load', headerFixed);
       document.addEventListener('scroll', headerFixed);
     }
-  
+    //vimala
     // Navbar links active state on scroll
     let navbarlinks = document.querySelectorAll('#navbar a');
   
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     window.addEventListener('load', navbarlinksActive);
     document.addEventListener('scroll', navbarlinksActive);
-  
+   //komu
     // Mobile nav toggle
     const mobileNavShow = document.querySelector('.mobile-nav-show');
     const mobileNavHide = document.querySelector('.mobile-nav-hide');
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   
     });
-  
+     //vashu
       //  Toggle mobile nav dropdowns
     const navDropdowns = document.querySelectorAll('.navbar .dropdown > a');
   
@@ -129,7 +129,8 @@ document.addEventListener('DOMContentLoaded', () => {
         prevEl: '.swiper-button-prev',
       }
     });
-  
+
+   //me  
     /*
       Init swiper slider with 3 slides at once in desktop view
      */

@@ -78,7 +78,8 @@
           <h2>Welcome to <span>MoneyMinder</span></h2>
           <p>Take control of your finances with our Budget Tracker</p>
           <div class="d-flex justify-content-center justify-content-lg-start">
-            <a href="budget.html" class="btn-get-started">Get The App</a>
+            <a href="budget.html" class="btn-get-started"> App Demo</a>&nbsp;
+            <a href="form.html" class="btn-get-started">Join with Us</a>
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2">
@@ -573,8 +574,6 @@
       </div>
     </section><!-- End Frequently Asked Questions Section -->
 
-    
-
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
@@ -625,17 +624,17 @@
           </div>
 
           <div class="col-lg-8">
-            <form  method="post" role="form" class="php-email-form">
+            <form class="php-email-form" id="form">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  <input type="text" name="to_name" class="form-control" id="name" placeholder="Your Name" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
                   <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
                 </div>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                <input type="text" class="form-control" name="from_name" id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" rows="7" placeholder="Message" required></textarea>
@@ -645,7 +644,7 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit" name="submit" id="button">Send Message</button></div>
             </form>
           </div><!-- End Contact Form -->
 
@@ -665,7 +664,7 @@
           <a href="index.html" class="logo d-flex align-items-center">
             <span>MoneyMinder</span>
           </a>
-          <p>A MoneyMinder website helps users set and achieve their financial goals. They can establish targets like saving for a vacation, paying off debt, or building an emergency fund. The website provides visual representations of progress, motivating users to stay on track..</p>
+          <p>A MoneyMinder website helps users set and achieve their financial goals. They can establish targets like saving for a vacation, paying off debt, or building an emergency fund. The website provides visual representations of progress, motivating users to stay on track..</p>
           <div class="social-links d-flex mt-4">
             <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
             <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -677,23 +676,22 @@
         <div class="col-lg-2 col-6 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Features</a></li>
-            <li><a href="#team">Team</a></li>        
-            <li><a href="#contact">Contact</a></li>
-            
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Teams</a></li>
+            <li><a href="#">Contect</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
           <h4>Our Features</h4>
           <ul>
-            <li><a href="#services">User-friendly Interface</a></li>
-            <li><a href="#services">Expense Tracking</a></li>
-            <li><a href="#services">Income Tracking</a></li>
-            <li><a href="#services">Budget Creation</a></li>
-            <li><a href="#services">Custom Categories</a></li>
+            <li><a href="#">User-friendly Interface</a></li>
+            <li><a href="#">Expense Tracking</a></li>
+            <li><a href="#">Income Tracking</a></li>
+            <li><a href="#">Budget Creation</a></li>
+            <li><a href="#">Custom Categories</a></li>
           </ul>
         </div>
 
@@ -728,12 +726,13 @@
 
   <!-- Template Main JS File -->
   <script src="main.js"></script>
-
   <!---->
   <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
       
       <script type="text/javascript">
+        //paste public key
+        
         emailjs.init('XsnjQbyNJZhrQXcgH')
       </script>
 
@@ -745,7 +744,7 @@ document.getElementById('form')
    event.preventDefault();
 
    btn.value = 'Sending...';
-
+   // paste service id
    const serviceID = 'default_service';
    const templateID = 'template_x2ug95i';
 
@@ -763,3 +762,7 @@ document.getElementById('form')
 </body>
 
 </html>
+
+
+    
+    
