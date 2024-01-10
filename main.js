@@ -82,32 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   
     });
-     //vashu
-      //  Toggle mobile nav dropdowns
-    const navDropdowns = document.querySelectorAll('.navbar .dropdown > a');
-  
-    navDropdowns.forEach(el => {
-      el.addEventListener('click', function(event) {
-        if (document.querySelector('.mobile-nav-active')) {
-          event.preventDefault();
-          this.classList.toggle('active');
-          this.nextElementSibling.classList.toggle('dropdown-active');
-  
-          let dropDownIndicator = this.querySelector('.dropdown-indicator');
-          dropDownIndicator.classList.toggle('bi-chevron-up');
-          dropDownIndicator.classList.toggle('bi-chevron-down');
-        }
-      })
-    });
-    /* Initiate glightbox*/
-    const glightbox = GLightbox({
-      selector: '.glightbox'
-    });
-  
-  
-  
-    /* Initiate Pure Counter*/
-    new PureCounter();
+    
     /*
      Init swiper slider with 1 slide at once in desktop view
      */

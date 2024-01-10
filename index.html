@@ -616,7 +616,7 @@
                 <i class="bi bi-clock flex-shrink-0"></i>
                 <div>
                   <h4>Open Hours:</h4>
-                  <p>Mon-Sat: 11AM - 23PM</p>
+                  <p>Mon-Sat: 11:00 AM - 6:00 PM</p>
                 </div>
               </div><!-- End Info Item -->
             </div>
@@ -726,38 +726,36 @@
 
   <!-- Template Main JS File -->
   <script src="main.js"></script>
-  <!---->
-  <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-      
-      <script type="text/javascript">
-        //paste public key
-        
-        emailjs.init('XsnjQbyNJZhrQXcgH')
-      </script>
+  <!-- link of emailjs -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-      <script>
-        const btn = document.getElementById('button');
+<script type="text/javascript">
+  // Initialize Email.js with the public key
+  emailjs.init('XsnjQbyNJZhrQXcgH');
+</script>
 
-document.getElementById('form')
- .addEventListener('submit', function(event) {
-   event.preventDefault();
+<script>
+  const btn = document.getElementById('button');
+  document.getElementById('form').addEventListener('submit', function(event) {
+    // Prevent the default form submission behavior
+    event.preventDefault();
+   //indicate that the email is being sent
+    btn.value = 'Sending...';
+   // Specify the Email.js 
+    const serviceID = 'default_service';
+    const templateID = 'template_x2ug95i';
+    // Use Email.js to send the form data
+    emailjs.sendForm(serviceID, templateID, this)
+      .then(() => {
+        btn.value = 'Send Email';
+        alert('Sent!');
+      }, (err) => {
+        btn.value = 'Send Email';
+        alert(JSON.stringify(err));
+      });
+  });
+</script>
 
-   btn.value = 'Sending...';
-   // paste service id
-   const serviceID = 'default_service';
-   const templateID = 'template_x2ug95i';
-
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      btn.value = 'Send Email';
-      alert('Sent!');
-    }, (err) => {
-      btn.value = 'Send Email';
-      alert(JSON.stringify(err));
-    });
-});
-      </script>
 
 </body>
 

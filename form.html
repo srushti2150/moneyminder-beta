@@ -8,8 +8,6 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
- 
-
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,9 +31,6 @@
 <body>
 
   <!-- ======= Header ======= -->
- 
-  
-
   <header id="header" class="header d-flex align-items-center">
 
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
@@ -105,17 +100,12 @@
 		  parent.classList.remove("focus");
 	  }
   }
-  //to iterate over each element  //adds event listeners
   
   inputs.forEach(input => {                         
-	input.addEventListener("focus", addcl);  //event on each input element  . When an input field is focused, the addcl function is called.
-	input.addEventListener("blur", remcl);    // loses focus
+	input.addEventListener("focus", addcl);  
+	input.addEventListener("blur", remcl);  
   });
-  
- 
-     
-
-     // store the data in xl 
+ // store the data in xl 
     let users = [];
    
       function registerUser() {
@@ -128,13 +118,10 @@
           password: regPassword,
           Email:regEmail
         };
-   
+         // Add the user object to the 'users' array
         users.push(user);
         updateExcelFile(users);
-   
-        document.getElementById('registrationForm').redirect('budget.html');
-
-      }
+        }
       function updateExcelFile(data) {
         const csvContent = "data:text/csv;charset=utf-8," + 
           data.map(user => `${user.username},${user.password},${user.Email}`).join("\n");

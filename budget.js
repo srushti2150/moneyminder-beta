@@ -1,9 +1,7 @@
 
 
 // Initial Data 
-let tableEntries = [ 
-	
-]; 
+let tableEntries = []; 
 
 // Function to update data expense summary . reduce take callback function
 function updateSummary() { 
@@ -100,6 +98,4 @@ function updateTable() {
 	updateSummary(); 
 } 
 
-updateTable();
-//initially to load and display the entries
  
