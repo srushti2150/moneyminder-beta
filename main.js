@@ -50,7 +50,7 @@ window.addEventListener('load', navbarlinksActive);
         mobileNavToogle();
       })
     });
-  
+   
     function mobileNavToogle() {
       document.querySelector('body').classList.toggle('mobile-nav-active');
       mobileNavShow.classList.toggle('d-none');
