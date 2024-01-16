@@ -1,14 +1,10 @@
-
-
 /*--------------------------------------------------------------
   # Header
   --------------------------------------------------------------*/
   .topbar {
     background: #00796b;
     height: 40px;
-    font-size: 14px;
-   
-    
+    font-size: 14px;    
     color: #fff;
     padding: 0;
   }
@@ -26,13 +22,12 @@
   }
   
   @media (max-width: 575px) {
-  
     .topbar .contact-info i a,
     .topbar .contact-info i span {
       font-size: 13px;
-    }
-  
+    } 
   }
+
   .topbar .contact-info i a {
     line-height: 0;
     transition: 0.3s;
@@ -42,8 +37,7 @@
     color: #fff;
     text-decoration: underline;
   }
-  
-  
+   
   .topbar .social-links a {
     color: rgba(255, 255, 255, 0.7);
     line-height: 0;
@@ -84,9 +78,7 @@
     color: #fff;
     font-family: var(--font-primary); 
   }
-  
- 
-  
+   
   .sticked-header-offset {
     margin-top: 70px;
   }
@@ -94,6 +86,7 @@
   section {
     scroll-margin-top: 70px;
   }
+
  .button button{
   margin-top: 2px;
   padding: 5px;
@@ -105,23 +98,19 @@
   margin-left:10%;
   border:2px solid lightgreen ;
   font-size:22px;
-  transition:1s;
-  
+  transition:1s; 
  }
+ 
  .button button:hover{
   color:black;
-  background-color:#fff;
- 
+  background-color:#fff; 
 }
+
 .deletebtn{
   width: 30px;
 }
 
-  
-  
-
 /* style for main page */
-
 /* Media query for screens with a maximum width of 768 pixels (tablets) */
 @media only screen and (max-width: 768px) {
   body {
@@ -206,7 +195,6 @@
   }
 }
 
-
 /* style for heading */
 .heading h2{
 	color:#0d0d0d;
@@ -214,17 +202,14 @@
   margin-bottom: 2%;
   font-size:40px;
 }
+
 body { 
 	display: flexbox; 
 	text-align: center; 
 	align-items: center; 
 } 
 
-
-
 /* Style to expense summary */
-
-
 .summary { 
 	width: 400px;
 	display: flex; 
@@ -242,34 +227,33 @@ body {
 	font-size:40px;
 	color:rgba(246, 238, 4, 0.802);
 }
+
 .summary h2 img{
 	width:350px;
 	height:150px;
 }
+
 .summary h2 span{
      color: green;
 	 font-size: 40px;
 }
-
-
 
 .total { 
 	display: flex; 
 	flex-direction: row; 
 	margin: auto;
   background-color:#00796b;
-  margin-left:9%;
-  
-	
+  margin-left:9%;	
 } 
+
 .total h2{
-	font-size: 29px;
-  
-	
+	font-size: 29px;	
 }
+
 .income h2{
      color:lime;
 }
+
 .Expenses h2{
 	color: red;
 }
@@ -277,6 +261,7 @@ body {
 .total div { 
 	width: 160px; 
 } 
+
 #items h2{
   color: #171616;
   margin-bottom: 5px;
@@ -285,7 +270,6 @@ body {
 /* Style for the expense table and input form*/
 .root { 
 	width: fit-content; 
-	
 	display: flex; 
 	margin: auto; 
 	padding: 2%; 
@@ -302,14 +286,9 @@ body {
   margin-bottom: 9px;
 } 
 
-
-
 /* Style for table*/
-
 #table { 
-	
-	width: 40vw; 
-	
+	width: 40vw; 	
 	font-size: 23px; 
 	box-shadow: 8px 5px 9px black;
 	margin-left: -9px;
@@ -330,15 +309,12 @@ body {
 /* Table row */
 #table tr { 
 	border-bottom: 1px solid #ddd; 
-
 } 
 
 /* Headings*/
 #table tr.titles { 
 	background-color:#00796b;
 	color: #ddd;
-	
-	
 } 
 
 /* Style for each input item */
@@ -354,7 +330,6 @@ body {
 	margin-bottom: 8px;
 } 
 
-
 input, 
 select, 
 option { 
@@ -362,35 +337,35 @@ option {
 	border-radius: 5px; 
 	margin: 1%; 
 	width: 50%;
-	box-shadow: 5px 5px 5px black;
-	
-	
-	
+	box-shadow: 5px 5px 5px black;	
 } 
+
 img{
 	border-radius: 10px;
   margin-top: 10px;
 }
+
 h1{
 	text-shadow: 2px 2px black;
 	font-size: 590%;
 	margin-top: 0px;
-	margin-bottom: 1px;
-
-	
+	margin-bottom: 1px;	
 }
+
 h2{
 	margin-top: 3px;
 	font-size: 30px;
 	color: #fff;
-	
-}.add{
+}
+
+.add{
 	font-size: 250%;
 	text-align: center;
 	margin-bottom: 19px;
 	font-family:Georgia, 'Times New Roman', Times, serif;
 	height: 9%;
 }
+
 #itemType{
 	width: 50%;
 	margin-left: 51px;
@@ -403,8 +378,6 @@ button{
 	font-family:  serif;
 	font-weight: bold;
   box-shadow: 3px 3px 3px black;
-
-	
 }
 
 .glow-on-hover {
@@ -434,30 +407,26 @@ button{
     opacity: 0;
     transition: opacity .3s ease-in-out;
     border-radius: 10px;
-	
 }
-
-
 
 .glow-on-hover:hover:before {
     opacity: 1;
 }
 
-
 @keyframes glowing {
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; };
-}p{
+}
+
+p{
 	font-size: 21px;
 	font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
- 
 .zoom { 
 	color: black; 
-	transition: transform .2s; 
-
+  transition: transform .2s; 
 } 
 
 .zoom:hover { 
@@ -465,8 +434,6 @@ button{
 
 	color:green;
 }
-
-
 
 /*--------------------------------------------------------------
   # Footer
@@ -496,8 +463,7 @@ button{
     letter-spacing: 1px;
     color: #fff;
     font-family: var(--font-primary);
-  }
-  
+  }  
   
   .footer .footer-info p {
     font-size: 19px;
@@ -586,6 +552,7 @@ button{
   .footer .credits a {
     color: #fff;
   }
+  
   .container p{
     font-size:8px;
   }

@@ -1,6 +1,7 @@
 // alok
 document.addEventListener('DOMContentLoaded', () => {
     "use strict";
+
     //  Preloader
     const preloader = document.querySelector('#preloader');
     if (preloader) {
@@ -8,8 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
         preloader.remove();
       });
     }
+
      //  Sticky Header on Scroll navbar come with scroll
-    
     const selectHeader = document.querySelector('#header');
     if (selectHeader) {
       let headerOffset = selectHeader.offsetTop;
@@ -27,10 +28,10 @@ document.addEventListener('DOMContentLoaded', () => {
       window.addEventListener('load', headerFixed);
       document.addEventListener('scroll', headerFixed);
     }
+
     //vimala
     // Navbar links active state on scroll
     let navbarlinks = document.querySelectorAll('#navbar a');
-  
     function navbarlinksActive() {
       navbarlinks.forEach(navbarlink => {
   
@@ -50,11 +51,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     window.addEventListener('load', navbarlinksActive);
     document.addEventListener('scroll', navbarlinksActive);
+
    //komu
     // Mobile nav toggle
     const mobileNavShow = document.querySelector('.mobile-nav-show');
     const mobileNavHide = document.querySelector('.mobile-nav-hide');
-  
     document.querySelectorAll('.mobile-nav-toggle').forEach(el => {
       el.addEventListener('click', function(event) {
         event.preventDefault();
@@ -67,6 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
       mobileNavShow.classList.toggle('d-none');
       mobileNavHide.classList.toggle('d-none');
     }
+
     //  Hide mobile nav on same-page/hash links
     document.querySelectorAll('#navbar a').forEach(navbarlink => {
   
@@ -79,13 +81,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (document.querySelector('.mobile-nav-active')) {
           mobileNavToogle();
         }
-      });
-  
+      });  
     });
-     //vashu
+
+     //vaishu
       //  Toggle mobile nav dropdowns
     const navDropdowns = document.querySelectorAll('.navbar .dropdown > a');
-  
     navDropdowns.forEach(el => {
       el.addEventListener('click', function(event) {
         if (document.querySelector('.mobile-nav-active')) {
@@ -99,15 +100,15 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       })
     });
+
     /* Initiate glightbox*/
     const glightbox = GLightbox({
       selector: '.glightbox'
     });
   
-  
-  
     /* Initiate Pure Counter*/
     new PureCounter();
+
     /*
      Init swiper slider with 1 slide at once in desktop view
      */
@@ -156,7 +157,6 @@ document.addEventListener('DOMContentLoaded', () => {
           slidesPerView: 1,
           spaceBetween: 40
         },
-  
         1200: {
           slidesPerView: 3,
         }
@@ -175,7 +175,6 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('load', () => {
       aos_init();
     });
-  
   });
 
   

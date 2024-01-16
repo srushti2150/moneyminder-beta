@@ -1,5 +1,3 @@
-
-
 // Initial Data 
 let tableEntries = [ 
 	
@@ -21,7 +19,6 @@ function updateSummary() {
 	updatedBal.innerText = totalIncome - totalExpense; 
 } 
 
-
 // Function to add new entry to the dataset and expense table .retrieves
 function addItem() { 
 	let type = itemType.value; 
@@ -42,7 +39,8 @@ function addItem() {
 		name: name.value, 
 		amount: Number(amount.value), 
 	}); 
-   //  reset input fields
+ 
+	//  reset input fields
 	updateTable(); 
 	name.value = ""; 
 	amount.value = 0; 
@@ -50,8 +48,7 @@ function addItem() {
 
 // Function to load all entry in the expense table add row step by step
 function loadItems(e, i) { 
-	let cls; 
-
+	let cls;
 	let table = document.getElementById("table"); 
 	let row = table.insertRow(i + 1); 
 	let cell0 = row.insertCell(0); 

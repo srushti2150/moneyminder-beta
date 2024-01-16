@@ -45,8 +45,7 @@ body{
 }
 
 form{
-	width: 370px;
-	
+	width: 370px;	
 	height: 100%;
 }
 
@@ -170,7 +169,6 @@ a:hover{
 	border-radius: 25px;
 	outline: none;
 	border: none;
-	/* background-image: linear-gradient(to right, #187d5b, #3dbc94, #eff2f1); */
 	background-size: 200%;
 	background: #00796b;
 	font-size: 1.2rem;

@@ -3,12 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
   <title> Budget Tracker</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
-
- 
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,26 +23,18 @@
   <!-- Template Main CSS File -->
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="form.css">
-
-
 </head>
-
 <body>
 
   <!-- ======= Header ======= -->
- 
-  
-
   <header id="header" class="header d-flex align-items-center">
 
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center text-white " >
         <img src="img/logo.png" alt="" class="logo"> <h1>MoneyMinder</h1></a>
       <div class="button">
-        <a href="index.html"><img src="img/back-removebg-preview.png" alt="" height="40px"></a>
-       
+        <a href="index.html"><img src="img/back-removebg-preview.png" alt="" height="40px"></a>     
       </div>
-        
     </div>
   </header><!-- End Header -->
 <body>
@@ -90,10 +79,11 @@
             </form>
         </div>
     </div>
+
 	<!-- js -->
 	<script >
 		const inputs = document.querySelectorAll(".input");
-  
+
   function addcl(){
 	  let parent = this.parentNode.parentNode;  //  input element being interacted with.
 	  parent.classList.add("focus"); //add focus class to the present element when input  field is focused. 
@@ -105,24 +95,19 @@
 		  parent.classList.remove("focus");
 	  }
   }
+
   //to iterate over each element  //adds event listeners
-  
   inputs.forEach(input => {                         
 	input.addEventListener("focus", addcl);  //event on each input element  . When an input field is focused, the addcl function is called.
 	input.addEventListener("blur", remcl);    // loses focus
   });
   
- 
-     
-
      // store the data in xl 
     let users = [];
-   
       function registerUser() {
         const regUsername = document.getElementById('regUsername').value;
         const regPassword = document.getElementById('regPassword').value;
         const regEmail=document.getElementById('regEmail').value;
-   
         const user = {
           username: regUsername,
           password: regPassword,
@@ -131,14 +116,12 @@
    
         users.push(user);
         updateExcelFile(users);
-   
         document.getElementById('registrationForm').redirect('budget.html');
-
       }
+
       function updateExcelFile(data) {
         const csvContent = "data:text/csv;charset=utf-8," + 
           data.map(user => `${user.username},${user.password},${user.Email}`).join("\n");
-   
         const encodedUri = encodeURI(csvContent);
         const link = document.createElement("a");
         link.setAttribute("href", encodedUri);
@@ -147,7 +130,6 @@
         link.click();
       }
     </script>
-    
 </body>
 </html>
 
