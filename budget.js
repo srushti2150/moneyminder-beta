@@ -80,8 +80,10 @@ function remove() {
 // Function to delete a specific entry 
 function del(el) { 
 	remove(); 
+
 	// Filter out the selected entry 
 	tableEntries = tableEntries.filter( e => e.name !== el.name); 
+	
 	 // Reload the updated entries  to the table
 	tableEntries.map((e, i) => loadItems(e, i)); 
 	updateSummary(); 
