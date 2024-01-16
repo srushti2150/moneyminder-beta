@@ -338,6 +338,7 @@ option {
 	margin: 1%; 
 	width: 50%;
 	box-shadow: 5px 5px 5px black;	
+  border: none;
 } 
 
 img{
