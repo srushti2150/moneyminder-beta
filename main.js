@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () =>{
     // Navbar links active state on scroll
 let navbarlinks = document.querySelectorAll('#navbar a');
 function navbarlinksActive() {
-  const position = window.scrollY + 200;
+  const position = window.scrollY + 250;
  // Iterate over each navigation link
   navbarlinks.forEach(navbarlink => {
     if (navbarlink.hash) {
