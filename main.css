@@ -134,6 +134,8 @@
     line-height: 0;
     transition: 0.3s;
     margin-left: 20px;
+
+    
   }
   
   .topbar .social-links a:hover {
@@ -609,10 +611,11 @@
   
   .testimonials .testimonial-item .testimonial-img {
     width: 80px;
-    border-radius: 40%;
+    border-radius: 50%;
     margin-right: 15px;
     box-shadow:3px 3px 3px  #006459;
     height: 61px;
+    border: 2px solid black;
   }
   
   .testimonials .testimonial-item h3 {

@@ -1,3 +1,25 @@
+.btn-get-started {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 19px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 45px;
+  border-radius: 50px;
+  transition: 0.3s;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  width: 170px;
+
+  margin-top: 20%;
+  }
+  .btn-get-started:hover{
+    border-color: #fff;
+  } 
+
 
 
 /*--------------------------------------------------------------
@@ -213,6 +235,10 @@
   text-align: center;
   margin-bottom: 2%;
   font-size:40px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
 }
 body { 
 	display: flexbox; 
@@ -233,22 +259,29 @@ body {
 	margin:-1px; 
 	margin-bottom: 40px; 
 	padding: 1%; 
-	color: #fff;
+	color: #000000;
 	margin-left: -40px;
- height: 370px;
+ height: 270px;
 }
  
 #updatedBal{
-	font-size:40px;
+	font-size:30px;
 	color:rgba(246, 238, 4, 0.802);
 }
 .summary h2 img{
-	width:350px;
-	height:150px;
+	width:320px;
+	height:160px;
+  margin-top: 30px;
+  border-radius: 20px;
 }
 .summary h2 span{
      color: green;
 	 font-size: 40px;
+}
+.balance h2{
+  font-family:"Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+	font-weight:500;
+  font-size:38px;
 }
 
 
@@ -263,7 +296,9 @@ body {
 	
 } 
 .total h2{
-	font-size: 29px;
+	font-family:"Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+	font-weight: 400;
+  font-size:30px;
   
 	
 }
@@ -280,6 +315,10 @@ body {
 #items h2{
   color: #171616;
   margin-bottom: 5px;
+  font-family:"Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+	font-weight:700;
+  font-size:38px;
+  
 }
 
 /* Style for the expense table and input form*/
@@ -298,7 +337,7 @@ body {
 	box-shadow: 5px 4px 8px 0 black; 
 	min-height: 30vh; 
 	background: rgba(0, 131, 116, 0.8);
-	color: #fff;
+	color: #faf8f8;
   margin-bottom: 9px;
 } 
 
@@ -323,8 +362,9 @@ body {
 #table td { 
 	text-align: left; 
 	padding: 12px; 
-	font-family: 'DM Serif Display', serif;
-	font-family: 'Kalnia', serif;
+	font-family:"Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+	font-weight: 400;
+  font-size:large;
 } 
 
 /* Table row */
@@ -346,7 +386,7 @@ body {
 	display: flex; 
 	flex-direction: row; 
 	font-weight: bolder; 
-	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-family:"Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
 	padding: -2%; 
 	margin-top: 9px;
 	margin-left: 30px;
@@ -364,13 +404,10 @@ option {
 	width: 50%;
 	box-shadow: 5px 5px 5px black;
 	
-	
+	border: none;
 	
 } 
-img{
-	border-radius: 10px;
-  margin-top: 10px;
-}
+
 h1{
 	text-shadow: 2px 2px black;
 	font-size: 590%;
@@ -382,75 +419,27 @@ h1{
 h2{
 	margin-top: 3px;
 	font-size: 30px;
-	color: #fff;
+	color: #ffffff;
 	
 }.add{
 	font-size: 250%;
 	text-align: center;
 	margin-bottom: 19px;
-	font-family:Georgia, 'Times New Roman', Times, serif;
-	height: 9%;
+	
+  font-family:"Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+	font-weight: 500;
+  font-size:40px;
 }
 #itemType{
 	width: 50%;
 	margin-left: 51px;
 }
 
-button{
-	margin-top: 90px;
-	font-size: 20px;
-  margin-left: 190px;
-	font-family:  serif;
-	font-weight: bold;
-  box-shadow: 3px 3px 3px black;
 
-	
-}
-
-.glow-on-hover {
-    width: 220px;
-    height: 50px;
-    border: none;
-    outline: none;
-    color: #171616;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 10px;
-}
-
-.glow-on-hover:before {
-    content: '';
-    background: linear-gradient(45deg, #fffb00, #96d77c,yellow,pink);
-    position: absolute;
-    top: -2px;
-    left:-2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
-	
-}
-
-
-
-.glow-on-hover:hover:before {
-    opacity: 1;
-}
-
-
-@keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; };
-}p{
-	font-size: 21px;
-	font-family:Georgia, 'Times New Roman', Times, serif;
+p{
+	font-family:"Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+	font-weight: 400;
+  font-size:large;
 }
 
  
