@@ -611,10 +611,10 @@
   
   .testimonials .testimonial-item .testimonial-img {
     width: 80px;
-    border-radius: 50%;
+    border-radius: 60%;
     margin-right: 15px;
-    box-shadow:3px 3px 3px  #006459;
-    height: 61px;
+  
+    height: 65px;
     border: 2px solid black;
   }
   
