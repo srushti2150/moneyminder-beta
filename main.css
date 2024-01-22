@@ -1,8 +1,8 @@
 
 :root {
-    --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --font-primary: "Montserrat", sans-serif;
-    --font-secondary: "Poppins", sans-serif;
+  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-primary:'Roboto', sans-serif;
+  --font-secondary: "Poppins", sans-serif;
   }
   
   /* Colors */
@@ -83,7 +83,10 @@
   
   .section-header p {
     margin-bottom: 0;
-    color: #6f6f6f;
+    color: #0c0a0a;
+    font-size: medium;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
  
@@ -468,10 +471,11 @@
   # About Us Section
   --------------------------------------------------------------*/
   .about h3 {
-    font-weight: 700;
+  
     font-size: 28px;
     margin-bottom: 20px;
     font-family: var(--font-secondary);
+    font-weight: bold;
   }
   
   .about .call-us {
@@ -512,6 +516,7 @@
     left: 0;
     top: -3px;
     color: var(--color-primary);
+    font-weight: bold;
   }
   
   .about .content p:last-child {
@@ -574,8 +579,10 @@
   
   .services .service-item p {
     line-height: 24px;
-    font-size: 14px;
+    font-size: 18px;
     margin-bottom: 0;
+    font-weight: 500;
+
   }
   
   .services .service-item .readmore {
@@ -868,6 +875,7 @@
     padding: 20px;
     border-radius: 10px 0 0 10px;
     box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+    
   }
   
   .contact .info-item {
@@ -1152,7 +1160,8 @@
   
   .hero .icon-box:hover .title a,
   .hero .icon-box:hover .icon {
-    color: #fff;
+    color:#fa8674;
+    
   }
   
   /*--------------------------------------------------------------
